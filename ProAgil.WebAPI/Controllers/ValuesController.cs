@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ProAgil.WebAPI.Controllers
 {
-    [Route("site/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
@@ -32,7 +32,7 @@ namespace ProAgil.WebAPI.Controllers
             }
             catch (System.Exception)
             {
-               return this.StatusCode(StatusCodes.Status500InternalServerError,"Banco de Dados Falhou");
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Banco de Dados Falhou");
             }
 
         }
@@ -48,9 +48,9 @@ namespace ProAgil.WebAPI.Controllers
             }
             catch (System.Exception)
             {
-               return this.StatusCode(StatusCodes.Status500InternalServerError,"Banco de Dados Falhou");
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Banco de Dados Falhou");
             }
-            
+
         }
 
         // POST api/values
